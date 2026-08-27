@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.profile-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.nav-pills .nav-link {
+  color: #495057;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0d6efd;
+}
+
+.card {
+  border: none;
+}
+
+.table th {
+  white-space: nowrap;
+}

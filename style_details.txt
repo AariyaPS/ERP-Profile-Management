@@ -1,0 +1,1 @@
+list-group-flush = makes a Bootstrap list group blend neatly with its container by removing its outer borders and rounded edges.
