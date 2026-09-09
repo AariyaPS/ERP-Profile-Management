@@ -11,74 +11,66 @@ import AddEmployee from "../modules/hr/employees/AddEmployee.jsx";
 
 import LeaveManagement from "../modules/hr/leave/LeaveManagement.jsx";
 import Attendance from "../modules/hr/attendance/Attendance.jsx";
+import Payroll from "../modules/hr/payroll/Payroll.jsx";
+import Finance from "../modules/finance/Finance.jsx";
+import CustomerLeads from "../modules/crm/customers/CustomerLeads.jsx";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <MainLayout>
         <Routes>
-
           {/* Dashboard */}
-          <Route
-            path="/dashboard"
-            element={<Dashboard />}
-          />
+          <Route path="/dashboard" element={<Dashboard />} />
 
           {/* ================================
               HUMAN RESOURCES - EMPLOYEES
           ================================= */}
 
           {/* Employee List */}
-          <Route
-            path="/hr/employees"
-            element={<EmployeeList />}
-          />
+          <Route path="/hr/employees" element={<EmployeeList />} />
 
           {/* Add Employee */}
-          <Route
-            path="/hr/employees/add"
-            element={<AddEmployee />}
-          />
+          <Route path="/hr/employees/add" element={<AddEmployee />} />
 
           {/* Employee Profile */}
-          <Route
-            path="/hr/employees/:id"
-            element={<EmployeeProfile />}
-          />
+          <Route path="/hr/employees/:id" element={<EmployeeProfile />} />
 
           {/* Edit Employee */}
-          <Route
-            path="/hr/employees/:id/edit"
-            element={<EditEmployee />}
-          />
+          <Route path="/hr/employees/:id/edit" element={<EditEmployee />} />
 
           {/* ================================
               HUMAN RESOURCES - LEAVE
           ================================= */}
 
-          <Route
-            path="/hr/leave"
-            element={<LeaveManagement />}
-          />
+          <Route path="/hr/leave" element={<LeaveManagement />} />
 
           {/* ================================
               HUMAN RESOURCES - ATTENDANCE
           ================================= */}
 
-          <Route
-            path="/hr/attendance"
-            element={<Attendance />}
-          />
+          <Route path="/hr/attendance" element={<Attendance />} />
+
+          {/* ================================
+              HUMAN RESOURCES - PAYROLL
+          ================================= */}
+          <Route path="/hr/payroll" element={<Payroll />} />
+
+          {/* ================================
+              FINANCE - FINANCE
+          ================================= */}
+          <Route path="/finance" element={<Finance />} />
+
+          {/* ================================
+              CRM - Customer & Lead
+          ================================= */}
+          <Route path="/crm/customers" element={<CustomerLeads />} />
 
           {/* ================================
               DEFAULT
           ================================= */}
 
-          <Route
-            path="/"
-            element={<Navigate to="/dashboard" />}
-          />
-
+          <Route path="/" element={<Navigate to="/dashboard" />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

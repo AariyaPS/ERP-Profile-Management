@@ -89,7 +89,7 @@ function Sidebar() {
                 </div>
 
                 <NavLink
-                    to="/crm"
+                    to="/crm/customers"
                     className="nav-link sidebar-link mb-2"
                 >
                     Customer & Leads
