@@ -14,6 +14,8 @@ import Attendance from "../modules/hr/attendance/Attendance.jsx";
 import Payroll from "../modules/hr/payroll/Payroll.jsx";
 import Finance from "../modules/finance/Finance.jsx";
 import CustomerLeads from "../modules/crm/customers/CustomerLeads.jsx";
+import Projects from "../modules/projects/Projects.jsx";
+import ProjectDetails from "../modules/projects/ProjectDetails.jsx";
 
 function AppRoutes() {
   return (
@@ -65,6 +67,16 @@ function AppRoutes() {
               CRM - Customer & Lead
           ================================= */}
           <Route path="/crm/customers" element={<CustomerLeads />} />
+
+          {/* ================================
+              PROJECTS
+          ================================= */}
+          <Route path="/projects" element={<Projects />} />
+
+          {/* ================================
+              PROJECT DETAILS
+          ================================= */}
+          <Route path="/projects/:id" element={<ProjectDetails />} />
 
           {/* ================================
               DEFAULT
