@@ -16,6 +16,12 @@ import Finance from "../modules/finance/Finance.jsx";
 import CustomerLeads from "../modules/crm/customers/CustomerLeads.jsx";
 import Projects from "../modules/projects/Projects.jsx";
 import ProjectDetails from "../modules/projects/ProjectDetails.jsx";
+import AddProject from "../modules/projects/AddProject.jsx";
+import Administration from "../modules/administration/Administration.jsx";
+import OrganizationSettings from "../modules/administration/OrganizationSettings.jsx";
+import UsersRoles from "../modules/administration/UsersRoles.jsx";
+import Permissions from "../modules/administration/Permissions.jsx"
+
 
 function AppRoutes() {
   return (
@@ -77,6 +83,33 @@ function AppRoutes() {
               PROJECT DETAILS
           ================================= */}
           <Route path="/projects/:id" element={<ProjectDetails />} />
+
+          {/* ================================
+              ADD PROJECT 
+          ================================= */}
+          <Route path="/projects/add" element={<AddProject />} />
+
+
+          {/* ================================
+              SETTING
+          ================================= */}
+          <Route path="/administration" element={<Administration />}
+/>
+
+          {/* ================================
+              ORGANIZATION SERTTING
+          ================================= */}
+          <Route path="/administration/organization" element={<OrganizationSettings />} />
+
+          {/* ================================
+              USERS ROLES SETTING
+          ================================= */}
+          <Route path="/administration/users" element={<UsersRoles />} />
+
+          {/* ================================
+              PERMISSION SETTING
+          ================================= */}
+          <Route path="/administration/permissions" element={<Permissions />} />
 
           {/* ================================
               DEFAULT

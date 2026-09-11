@@ -115,7 +115,7 @@ function Sidebar() {
                 </div>
 
                 <NavLink
-                    to="/settings"
+                    to="/administration"
                     className="nav-link sidebar-link mb-2"
                 >
                     Settings
