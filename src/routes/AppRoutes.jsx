@@ -20,8 +20,9 @@ import AddProject from "../modules/projects/AddProject.jsx";
 import Administration from "../modules/administration/Administration.jsx";
 import OrganizationSettings from "../modules/administration/OrganizationSettings.jsx";
 import UsersRoles from "../modules/administration/UsersRoles.jsx";
-import Permissions from "../modules/administration/Permissions.jsx"
-
+import Permissions from "../modules/administration/Permissions.jsx";
+import MasterData from "../modules/administration/MasterData.jsx";
+import Workflows from "../modules/administration/Workflows.jsx";
 
 function AppRoutes() {
   return (
@@ -89,17 +90,18 @@ function AppRoutes() {
           ================================= */}
           <Route path="/projects/add" element={<AddProject />} />
 
-
           {/* ================================
               SETTING
           ================================= */}
-          <Route path="/administration" element={<Administration />}
-/>
+          <Route path="/administration" element={<Administration />} />
 
           {/* ================================
               ORGANIZATION SERTTING
           ================================= */}
-          <Route path="/administration/organization" element={<OrganizationSettings />} />
+          <Route
+            path="/administration/organization"
+            element={<OrganizationSettings />}
+          />
 
           {/* ================================
               USERS ROLES SETTING
@@ -110,6 +112,17 @@ function AppRoutes() {
               PERMISSION SETTING
           ================================= */}
           <Route path="/administration/permissions" element={<Permissions />} />
+
+          {/* ================================
+              SETTINGS - MASTER DATA
+          ================================= */}
+
+          <Route path="/administration/workflows" element={<Workflows />} />
+
+          {/* ================================
+              SETTINGS - WORKFLOW
+          ================================= */}
+
 
           {/* ================================
               DEFAULT
