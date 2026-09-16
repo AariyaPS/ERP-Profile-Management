@@ -23,6 +23,10 @@ import UsersRoles from "../modules/administration/UsersRoles.jsx";
 import Permissions from "../modules/administration/Permissions.jsx";
 import MasterData from "../modules/administration/MasterData.jsx";
 import Workflows from "../modules/administration/Workflows.jsx";
+import Notifications from "../modules/administration/Notifications.jsx";
+import Security from "../modules/administration/Security.jsx";
+import AuditLogs from "../modules/administration/AuditLogs.jsx";
+import SystemSettings from "../modules/administration/SystemSettings.jsx";
 
 function AppRoutes() {
   return (
@@ -117,12 +121,36 @@ function AppRoutes() {
               SETTINGS - MASTER DATA
           ================================= */}
 
-          <Route path="/administration/workflows" element={<Workflows />} />
+          <Route path="/administration/master-data" element={<MasterData />} />
 
           {/* ================================
               SETTINGS - WORKFLOW
           ================================= */}
+          <Route path="/administration/workflows" element={<Workflows />} />
 
+          {/* ================================
+              SETTINGS - NOTIFICATIONS
+          ================================= */}
+
+          <Route path="/administration/notifications" element={<Notifications />}/>
+
+          {/* ================================
+              SETTINGS - SECURITY
+          ================================= */}
+
+          <Route path="/administration/security" element={<Security />}/>
+
+          {/* ================================
+              SETTINGS - AUDIT LOGS
+          ================================= */}
+
+          <Route path="/administration/audit-logs" element={<AuditLogs />}/>
+
+          {/* ================================
+              SETTINGS - SYSTEM SETTINGS
+          ================================= */}
+
+          <Route path="/administration/system-settings" element={<SystemSettings />}/>
 
           {/* ================================
               DEFAULT
