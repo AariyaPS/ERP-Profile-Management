@@ -6,11 +6,13 @@ function Sidebar() {
             className="sidebar border-end"
             style={{
                 width: "250px",
-                minHeight: "100vh"
+                minHeight: "100vh",
+                height: "100vh",
+                overflowY: "auto"
             }}
         >
 
-            {/* Logo */}
+            {/* LOGO */}
             <div className="p-4 border-bottom sidebar-header">
                 <h4 className="mb-0 text-white">
                     ERP System
@@ -36,9 +38,9 @@ function Sidebar() {
                 </NavLink>
 
 
-                {/* HR */}
+                {/* HUMAN RESOURCE */}
                 <div className="text-muted small fw-bold mt-4 mb-2">
-                    Human Resource
+                    HUMAN RESOURCE
                 </div>
 
                 <NavLink
@@ -70,6 +72,33 @@ function Sidebar() {
                 </NavLink>
 
 
+                {/* WORK MANAGEMENT */}
+                <div className="text-muted small fw-bold mt-4 mb-2">
+                    WORK MANAGEMENT
+                </div>
+
+                <NavLink
+                    to="/projects"
+                    className="nav-link sidebar-link mb-2"
+                >
+                    Projects
+                </NavLink>
+
+                <NavLink
+                    to="/timesheets"
+                    className="nav-link sidebar-link mb-2"
+                >
+                    Timesheets
+                </NavLink>
+
+                <NavLink
+                    to="/tasks"
+                    className="nav-link sidebar-link mb-2"
+                >
+                    Task Management
+                </NavLink>
+
+
                 {/* FINANCE */}
                 <div className="text-muted small fw-bold mt-4 mb-2">
                     FINANCE
@@ -96,20 +125,7 @@ function Sidebar() {
                 </NavLink>
 
 
-                {/* PROJECTS */}
-                <div className="text-muted small fw-bold mt-4 mb-2">
-                    Projects
-                </div>
-
-                <NavLink
-                    to="/projects"
-                    className="nav-link sidebar-link mb-2"
-                >
-                    Projects
-                </NavLink>
-
-
-                {/* SETTINGS */}
+                {/* ADMINISTRATION */}
                 <div className="text-muted small fw-bold mt-4 mb-2">
                     ADMINISTRATION
                 </div>
@@ -127,3 +143,4 @@ function Sidebar() {
 }
 
 export default Sidebar;
+

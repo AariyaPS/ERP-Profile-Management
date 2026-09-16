@@ -27,6 +27,8 @@ import Notifications from "../modules/administration/Notifications.jsx";
 import Security from "../modules/administration/Security.jsx";
 import AuditLogs from "../modules/administration/AuditLogs.jsx";
 import SystemSettings from "../modules/administration/SystemSettings.jsx";
+import Timesheets from "../modules/timesheets/Timesheets.jsx";
+import Tasks from "../modules/tasks/Tasks.jsx";
 
 function AppRoutes() {
   return (
@@ -35,6 +37,19 @@ function AppRoutes() {
         <Routes>
           {/* Dashboard */}
           <Route path="/dashboard" element={<Dashboard />} />
+
+
+          {/* ================================
+              HUMAN RESOURCES - TIMESHEETS
+          ================================= */}
+
+          <Route path="/timesheets" element={<Timesheets />} />
+
+          {/* ================================
+              HUMAN RESOURCES - TASKS
+          ================================= */}
+
+          <Route path="/tasks" element={<Tasks />} />
 
           {/* ================================
               HUMAN RESOURCES - EMPLOYEES

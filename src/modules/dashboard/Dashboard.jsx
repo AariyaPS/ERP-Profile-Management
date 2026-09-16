@@ -20,7 +20,7 @@ function Dashboard() {
             title: "Customers & Leads",
             description: "Track customers, prospects and leads",
             icon: "bi-person-lines-fill",
-            path: "/customers",
+            path: "/crm/customers",
             color: "#0d6efd",
         },
         {
