@@ -29,6 +29,7 @@ import AuditLogs from "../modules/administration/AuditLogs.jsx";
 import SystemSettings from "../modules/administration/SystemSettings.jsx";
 import Timesheets from "../modules/timesheets/Timesheets.jsx";
 import Tasks from "../modules/tasks/Tasks.jsx";
+import AddCustomer from "../modules/crm/customers/AddCustomer.jsx";
 
 function AppRoutes() {
   return (
@@ -37,7 +38,6 @@ function AppRoutes() {
         <Routes>
           {/* Dashboard */}
           <Route path="/dashboard" element={<Dashboard />} />
-
 
           {/* ================================
               HUMAN RESOURCES - TIMESHEETS
@@ -95,6 +95,12 @@ function AppRoutes() {
           <Route path="/crm/customers" element={<CustomerLeads />} />
 
           {/* ================================
+              CRM - Customer & Lead - Add Customer
+          ================================= */}
+
+          <Route path="/crm/customers/add" element={<AddCustomer />} />
+
+          {/* ================================
               PROJECTS
           ================================= */}
           <Route path="/projects" element={<Projects />} />
@@ -147,25 +153,31 @@ function AppRoutes() {
               SETTINGS - NOTIFICATIONS
           ================================= */}
 
-          <Route path="/administration/notifications" element={<Notifications />}/>
+          <Route
+            path="/administration/notifications"
+            element={<Notifications />}
+          />
 
           {/* ================================
               SETTINGS - SECURITY
           ================================= */}
 
-          <Route path="/administration/security" element={<Security />}/>
+          <Route path="/administration/security" element={<Security />} />
 
           {/* ================================
               SETTINGS - AUDIT LOGS
           ================================= */}
 
-          <Route path="/administration/audit-logs" element={<AuditLogs />}/>
+          <Route path="/administration/audit-logs" element={<AuditLogs />} />
 
           {/* ================================
               SETTINGS - SYSTEM SETTINGS
           ================================= */}
 
-          <Route path="/administration/system-settings" element={<SystemSettings />}/>
+          <Route
+            path="/administration/system-settings"
+            element={<SystemSettings />}
+          />
 
           {/* ================================
               DEFAULT

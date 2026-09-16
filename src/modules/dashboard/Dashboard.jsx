@@ -812,7 +812,7 @@ function Dashboard() {
 
                         <div className="col-xl-3 col-md-6">
                             <Link
-                                to="/customers"
+                                to="/crm/customers/add"
                                 className="btn w-100 py-3 border rounded-3 text-start"
                             >
                                 <i
